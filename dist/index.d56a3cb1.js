@@ -511,6 +511,7 @@ function regions(region) {
     else if (region === "Asia") return "red";
     else if (region === "Europe") return "yellow";
     else if (region === "Oceania") return "purple";
+    else return "grey";
 }
 
 },{"axios":"1IeuP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"1IeuP":[function(require,module,exports) {

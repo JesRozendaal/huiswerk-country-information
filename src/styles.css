@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Gochi+Hand&family=Michroma&family=Poppins:wght@300;500&display=swap');
 
 h1 {
     font-family: 'Gochi Hand', cursive;
@@ -10,11 +11,14 @@ h1 {
 }
 
 h3 {
-    display: inline-flex;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 25px;
+    display: inline-block;
     margin-bottom: 0;
 }
 
 p {
+    font-family: 'Comic Neue', cursive;
     margin-top: 0;
 }
 
@@ -26,6 +30,7 @@ p {
 .flag {
     width: 30px;
     display: inline-block;
+    margin-right: 5px;
 }
 
 #list-of-countries {
@@ -33,7 +38,7 @@ p {
     column-count: 3;
     background-color: hsl(210, 17%, 98%);
     border-radius: 10px;
-    border: 1px solid lightgray;
+    border: 2px solid lightgray;
     max-width: 100%;
     padding: 50px;
     margin: 25px;
@@ -57,4 +62,8 @@ p {
 
 .purple{
    color: hsl(288, 43%, 53%);
+}
+
+.grey {
+    color: hsl(210, 9%, 31%);
 }

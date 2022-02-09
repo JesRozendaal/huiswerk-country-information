@@ -73,4 +73,7 @@ function regions(region) {
     else if (region === "Oceania") {
         return "purple";
     }
+    else {
+        return "grey";
+    }
 }
