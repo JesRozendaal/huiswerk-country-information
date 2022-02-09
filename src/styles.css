@@ -1,20 +1,41 @@
 h1 {
     font-size: 46px;
-    font-family: 'Gochi Hand', cursive;
-}
-
-ul {
-    list-style: none;
-    column-count: 3;
-}
-
-h1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .world-map {
-    width: 100%;
+    width: 1000px;
 }
 
+.flag {
+    width: 50px;
+}
+#list-of-countries {
+    list-style: none;
+    column-count: 3;
+    border: 1px solid lightgray;
+    max-width: 1000px;
+    padding: 30px;
+}
+
+.blue {
+    color: royalblue;
+}
+
+.red {
+   color: hsl(354, 62%, 56%);
+}
+
+.green {
+   color: seagreen;
+}
+
+.yellow{
+   color: hsl(48, 100%, 60%);
+}
+
+.purple{
+   color: hsl(288, 43%, 53%);
+}
