@@ -1,23 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@300;500&display=swap');
+
 h1 {
-    font-size: 46px;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 80px;
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    margin: 25px;
+}
+
+h3 {
+    display: inline-flex;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
 }
 
 .world-map {
-    width: 1000px;
+    width: 100%;
+    margin: 25px;
 }
 
 .flag {
-    width: 50px;
+    width: 30px;
+    display: inline-block;
 }
+
 #list-of-countries {
     list-style: none;
     column-count: 3;
+    background-color: hsl(210, 17%, 98%);
+    border-radius: 10px;
     border: 1px solid lightgray;
-    max-width: 1000px;
-    padding: 30px;
+    max-width: 100%;
+    padding: 50px;
+    margin: 25px;
 }
 
 .blue {

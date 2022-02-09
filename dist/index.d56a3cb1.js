@@ -500,8 +500,8 @@ function getAllCountries(countries) {
     countries.map((allCountries)=>{
         const countryList = document.createElement('li');
         countryList.innerHTML = `<img src="${allCountries.flag}" class="flag"/> 
-              <h3 class="${regions(allCountries.region)}">${allCountries.name}</h3>
-                 <p>Has a polulation of ${allCountries.population} people</p>`;
+             <h3 class="${regions(allCountries.region)}">${allCountries.name}</h3>
+              <p>Has a polulation of ${allCountries.population} people</p>`;
         countryUnorderedList.appendChild(countryList);
     });
 }
