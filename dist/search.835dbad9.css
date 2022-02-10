@@ -1,0 +1,18 @@
+@import "https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@300;500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Comic+Neue&family=Gochi+Hand&family=Michroma&family=Poppins:wght@300;500&display=swap";
+h1 {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+p {
+    font-family: 'Comic Neue', cursive;
+    margin-top: 0;
+}
+.globe {
+
+}
+/*# sourceMappingURL=search.835dbad9.css.map */
