@@ -8,11 +8,19 @@ h1 {
     justify-content: center;
     margin: 25px;
 }
+h3 {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 25px;
+    display: inline-block;
+}
 p {
     font-family: 'Comic Neue', cursive;
     margin-top: 0;
 }
 .globe {
 
+}
+.flag {
+    display: inline-block;
 }
 /*# sourceMappingURL=search.835dbad9.css.map */
