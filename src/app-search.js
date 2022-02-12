@@ -17,32 +17,26 @@ import axios from "axios";
 // 9. Maak een inputveld met zoekknop op de pagina.
 //    De data mag pas opgehaald worden als de gebruiker op Enter of 'zoek' drukt.
 // 10. Zorg ervoor dat de input waarde als dynamische waarde wordt gebruikt in het GET request.
-// 11.
+// 11. Zorg ervoor dat de gebruiker een foutmelding krijgt als een ongeldig land ingevoerd wordt.
 
 console.log("Hallo!");
 
-async function fetchCountries () {
-    const containerResult = document.getElementById("country-data");
+async function fetchCountryData(name) {
+    const errorMessage = document.getElementById("error-message");
+    errorMessage.innerHTML = ' ';
 
     try {
-        const result = await axios.get('https://restcountries.com/v2/name/panama');
+        const result = await axios.get(`https://restcountries.com/v2/name/${name}`);
         console.log(result.data);
 
-const countries = result.data[0];
-
-containerResult.innerHTML = `
-<img src="${countries.flag}" class="flag" width="35px"/>
-<h3>${countries.name}</h3>
-<p>${countries.name} is situated in ${countries.subregion}. It has a population of ${countries.population}.</p>
-<p>The capital is ${countries.capital} ${getCurrencies(countries.currencies)}</p>
-<p>They speak ${countries.languages[0].name}.</p>`
+showCountries(result.data[0]);
 
     } catch (error) {
         console.log(error);
+errorMessage.innerHTML = `
+<p class="error">${name} hasn't been found, please try again 😃</p>`
     }
 }
-
-fetchCountries();
 
 function getCurrencies(currencies) {
     if(currencies.length === 2) {
@@ -51,5 +45,28 @@ function getCurrencies(currencies) {
         return `and you can pay with ${currencies[0].name}'s.`
     }
 }
+
+function showCountries (countries) {
+    const containerResult = document.getElementById("country-data");
+
+    containerResult.innerHTML = `
+<img src="${countries.flag}" class="flag" width="35px"/>
+<h3>${countries.name}</h3>
+<p>${countries.name} is situated in ${countries.subregion}. It has a population of ${countries.population}.</p>
+<p>The capital is ${countries.capital} ${getCurrencies(countries.currencies)}</p>`
+}
+
+const searchForm = document.getElementById("search-form");
+searchForm.addEventListener('submit', searchingCountries);
+
+function searchingCountries(e) {
+    e.preventDefault();
+
+    const inputField = document.getElementById("search-country");
+
+    fetchCountryData(inputField.value);
+
+    inputField.innerHTML = ' ';
+    }
 
 

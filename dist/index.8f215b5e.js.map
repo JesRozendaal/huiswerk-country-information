@@ -1,1 +1,0 @@
-{"mappings":"AAAA,OAAO,CAAC,GAAG,CAAC,CAAa,cAEzB,CAA+C,AAA/C,EAA+C,AAA/C,6CAA+C;AAC/C,CAAsB,AAAtB,EAAsB,AAAtB,oBAAsB","sources":["src/app.js"],"sourcesContent":["console.log('Hallo daar!');\r\n\r\n//1. installeer de dependencies via npm install\r\n// 2. installeer Axios"],"names":[],"version":3,"file":"index.8f215b5e.js.map","sourceRoot":"/__parcel_source_root/"}

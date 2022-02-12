@@ -21,6 +21,10 @@ p {
 
 }
 .flag {
-    display: inline-block;
+        display: inline-block;
+    margin-right: 5px;
+}
+.error {
+    font-size: 40px;
 }
 /*# sourceMappingURL=search.835dbad9.css.map */
