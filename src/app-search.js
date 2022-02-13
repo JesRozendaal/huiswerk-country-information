@@ -1,6 +1,6 @@
 import axios from "axios";
 
-//https://github.com/hogeschoolnovi/frontend-javascript-country-information-prt2
+// uitleg opdracht: https://github.com/hogeschoolnovi/frontend-javascript-country-information-prt2
 
 // Stappen:
 // 1. Maak nieuwe HTML, JS en CSS aan. Koppel deze aan elkaar.
@@ -18,11 +18,14 @@ import axios from "axios";
 //    De data mag pas opgehaald worden als de gebruiker op Enter of 'zoek' drukt.
 // 10. Zorg ervoor dat de input waarde als dynamische waarde wordt gebruikt in het GET request.
 // 11. Zorg ervoor dat de gebruiker een foutmelding krijgt als een ongeldig land ingevoerd wordt.
+// 12. Zorg ervoor dat de foutmelding verdwijnt als vervolgens een goed wordt gezocht.
 
 console.log("Hallo!");
 
 async function fetchCountryData(name) {
     const errorMessage = document.getElementById("error-message");
+    const clearScreen = document.getElementById("country-data");
+    clearScreen.innerHTML = ' ';
     errorMessage.innerHTML = ' ';
 
     try {

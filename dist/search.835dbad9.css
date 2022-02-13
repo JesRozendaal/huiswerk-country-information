@@ -3,9 +3,6 @@
 h1 {
     font-family: 'Gochi Hand', cursive;
     font-size: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
     margin: 25px;
 }
 h3 {
@@ -17,14 +14,35 @@ p {
     font-family: 'Comic Neue', cursive;
     margin-top: 0;
 }
-.globe {
-
+#body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.to-homepage {
+font-size: 20px;
+}
+.hands {
+border-radius: 800px;
 }
 .flag {
         display: inline-block;
     margin-right: 5px;
 }
 .error {
-    font-size: 40px;
+padding: 10px;
+    font-size: 20px;
+}
+#search-country {
+    border-radius: 10px;
+}
+#country-data {
+    border: 2px solid white;
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 550px;
+}
+#search-form {
+    position: relative;
 }
 /*# sourceMappingURL=search.835dbad9.css.map */

@@ -18,6 +18,9 @@ p {
     font-family: 'Comic Neue', cursive;
     margin-top: 0;
 }
+.to-search{
+    font-size: 20px;
+}
 .world-map {
     width: 100%;
     margin: 25px;
