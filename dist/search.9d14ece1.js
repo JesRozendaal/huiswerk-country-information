@@ -492,7 +492,7 @@ async function fetchCountryData(name) {
         showCountries(result.data[0]);
     } catch (error) {
         console.log(error);
-        errorMessage.innerHTML = `
+        clearScreen.innerHTML = `
 <p class="error">${name} hasn't been found, please try again 😃</p>`;
     }
 }
@@ -503,8 +503,9 @@ function getCurrencies(currencies) {
 function showCountries(countries) {
     const containerResult = document.getElementById("country-data");
     containerResult.innerHTML = `
-<img src="${countries.flag}" class="flag" width="35px"/>
+<img src="${countries.flag}" alt="flag-of-country" class="flag" width="35px"/>
 <h3>${countries.name}</h3>
+<hr color="lightgray">
 <p>${countries.name} is situated in ${countries.subregion}. It has a population of ${countries.population}.</p>
 <p>The capital is ${countries.capital} ${getCurrencies(countries.currencies)}</p>`;
 }

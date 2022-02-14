@@ -9,16 +9,16 @@ h1 {
 
 h3 {
     font-family: 'Gochi Hand', cursive;
-    font-size: 25px;
+    font-size: 35px;
     display: inline-block;
+    margin-bottom: 0;
 }
 
 p {
     font-family: 'Comic Neue', cursive;
-    margin-top: 0;
 }
 
-#body{
+.main{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,25 +34,34 @@ border-radius: 800px;
 
 .flag {
         display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .error {
-padding: 10px;
+    padding: 10px;
     font-size: 20px;
 }
 
+.search-button {
+    border-radius: 20px;
+    background-color: hsl(200, 33%, 50%);
+}
+
 #search-country {
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 #country-data {
-    border: 2px solid white;
-    background-color: lightgray;
     border-radius: 10px;
     width: 550px;
+    box-shadow: 5px 5px 5px 5px hsl(200, 33%, 50%);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#search-form {
-    position: relative;
+.welcome {
+    font-size: 30px;
+    text-align: center;
 }
+
