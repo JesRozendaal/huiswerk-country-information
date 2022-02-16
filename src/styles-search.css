@@ -4,78 +4,71 @@
 h1 {
     font-family: 'Gochi Hand', cursive;
     font-size: 80px;
-    text-align: center;
     margin: 25px;
 }
 
 h3 {
     font-family: 'Gochi Hand', cursive;
-    font-size: 25px;
+    font-size: 35px;
     display: inline-block;
     margin-bottom: 0;
 }
 
 p {
     font-family: 'Comic Neue', cursive;
-    margin-top: 0;
 }
 
 a {
     text-decoration: none;
 }
-
-.main {
+.main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.to-search{
+.to-homepage {
     font-size: 20px;
 }
 
-.world-map {
-    max-width: 1600px;
-    margin: 25px;
+.hands {
+    border-radius: 800px;
 }
 
 .flag {
-    width: 30px;
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
-#list-of-countries {
-    list-style: none;
-    column-count: 3;
-    background-color: hsl(210, 17%, 98%);
+.error {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.search-button {
+    border-color: lightgray;
+    border-radius: 50px;
+    background-color: hsl(200, 33%, 50%);
+    width: 150px;
+}
+
+.welcome {
+    font-size: 30px;
+    text-align: center;
+}
+
+#search-country {
+    border-color: hsl(200, 33%, 50%);
+    border-radius: 50px;
+    width: 300px;
+}
+
+#country-data {
     border-radius: 10px;
-    border: 2px solid lightgray;
-    max-width: 1600px;
-    padding: 50px;
-    margin: 25px;
-}
-
-.blue {
-    color: royalblue;
-}
-
-.red {
-   color: hsl(354, 62%, 56%);
-}
-
-.green {
-   color: seagreen;
-}
-
-.yellow{
-   color: hsl(48, 100%, 60%);
-}
-
-.purple{
-   color: hsl(288, 43%, 53%);
-}
-
-.grey {
-    color: hsl(210, 9%, 31%);
+    width: 550px;
+    box-shadow: 5px 5px 5px 5px hsl(200, 33%, 50%);
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }

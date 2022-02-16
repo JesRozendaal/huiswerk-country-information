@@ -1,50 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Gochi+Hand&family=Michroma&family=Poppins:wght@300;500&display=swap');
-
+@import "https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins:wght@300;500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Comic+Neue&family=Gochi+Hand&family=Michroma&family=Poppins:wght@300;500&display=swap";
 h1 {
     font-family: 'Gochi Hand', cursive;
     font-size: 80px;
     text-align: center;
     margin: 25px;
 }
-
 h3 {
     font-family: 'Gochi Hand', cursive;
     font-size: 25px;
     display: inline-block;
     margin-bottom: 0;
 }
-
 p {
     font-family: 'Comic Neue', cursive;
     margin-top: 0;
 }
-
 a {
     text-decoration: none;
 }
-
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .to-search{
     font-size: 20px;
 }
-
 .world-map {
     max-width: 1600px;
     margin: 25px;
 }
-
 .flag {
     width: 30px;
     display: inline-block;
     margin-right: 5px;
 }
-
 #list-of-countries {
     list-style: none;
     column-count: 3;
@@ -55,27 +46,22 @@ a {
     padding: 50px;
     margin: 25px;
 }
-
 .blue {
     color: royalblue;
 }
-
 .red {
    color: hsl(354, 62%, 56%);
 }
-
 .green {
    color: seagreen;
 }
-
 .yellow{
    color: hsl(48, 100%, 60%);
 }
-
 .purple{
    color: hsl(288, 43%, 53%);
 }
-
 .grey {
     color: hsl(210, 9%, 31%);
 }
+/*# sourceMappingURL=index.be5cf2f4.css.map */
