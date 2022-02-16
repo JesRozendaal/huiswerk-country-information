@@ -18,15 +18,16 @@ import axios from "axios";
 //    De data mag pas opgehaald worden als de gebruiker op Enter of 'zoek' drukt.
 // 10. Zorg ervoor dat de input waarde als dynamische waarde wordt gebruikt in het GET request.
 // 11. Zorg ervoor dat de gebruiker een foutmelding krijgt als een ongeldig land ingevoerd wordt.
-// 12. Zorg ervoor dat de foutmelding verdwijnt als vervolgens een goed wordt gezocht.
+// 12. Zorg ervoor dat de foutmelding verdwijnt als vervolgens een goed land wordt gezocht.
+// 13. Stylen maar!
+// 14. Bonus talen:
+//     Maak een functie die door de array van talen loopt en deze als een string teruggeeft op de pagina.
 
 console.log("Hallo!");
 
 async function fetchCountryData(name) {
-    const errorMessage = document.getElementById("error-message");
-    const clearScreen = document.getElementById("country-data");
-    clearScreen.innerHTML = ' ';
-    errorMessage.innerHTML = ' ';
+    const screenError = document.getElementById("country-data");
+    screenError.innerHTML = ' ';
 
     try {
         const result = await axios.get(`https://restcountries.com/v2/name/${name}`);
@@ -36,7 +37,7 @@ showCountries(result.data[0]);
 
     } catch (error) {
         console.log(error);
-clearScreen.innerHTML = `
+screenError.innerHTML = `
 <p class="error">${name} hasn't been found, please try again 😃</p>`
     }
 }
@@ -57,7 +58,8 @@ function showCountries (countries) {
 <h3>${countries.name}</h3>
 <hr color="lightgray">
 <p>${countries.name} is situated in ${countries.subregion}. It has a population of ${countries.population}.</p>
-<p>The capital is ${countries.capital} ${getCurrencies(countries.currencies)}</p>`
+<p>The capital is ${countries.capital} ${getCurrencies(countries.currencies)}</p>
+<p>${getLanguages(countries.languages)}</p>`
 }
 
 const searchForm = document.getElementById("search-form");
@@ -72,5 +74,32 @@ function searchingCountries(e) {
 
     inputField.innerHTML = ' ';
     }
+
+    function getLanguages (languages) {
+if (languages.length === 1) {
+    return `They speak ${languages[0].name}.`
+}
+else if (languages.length === 2) {
+    return `They speak ${languages[0].name} and ${languages[1].name}.`
+}
+else if (languages.length === 3) {
+    return `They speak ${languages[0].name}, ${languages[1].name} and ${languages[2].name}.`
+}
+else if(languages.length === 4) {
+    return `They speak ${languages[0].name}, ${languages[1].name}, ${languages[2].name} and ${languages[3].name}.`
+}
+    }
+
+// Ik heb het geprobeerd op te lossen via onderstaande for-loop. Dit werkt wel, maar helaas lukt het mij dan niet om op het einde het woord "and" toe te voegen.
+// Heb je misschien een tip hoe ik dit wel voor elkaar had kunnen krijgen op een makkelijkere manier dan ik nu heb gedaan?
+
+//else {
+// let moreLanguages = "They speak " + languages[0].name;
+//   for (let i = 1; i < languages.length; i++) {
+//moreLanguages = moreLanguages + " , " + languages[i].name;
+//   }
+//   return moreLanguages;
+//}
+// }
 
 

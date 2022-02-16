@@ -14,31 +14,43 @@ h3 {
 p {
     font-family: 'Comic Neue', cursive;
 }
+a {
+    text-decoration: none;
+}
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .to-homepage {
-font-size: 20px;
+    font-size: 20px;
 }
 .hands {
-border-radius: 800px;
+    border-radius: 800px;
 }
 .flag {
-        display: inline-block;
+    display: inline-block;
     margin-right: 10px;
 }
 .error {
     padding: 10px;
     font-size: 20px;
+    text-align: center;
 }
 .search-button {
-    border-radius: 20px;
+    border-color: lightgray;
+    border-radius: 50px;
     background-color: hsl(200, 33%, 50%);
+    width: 150px;
+}
+.welcome {
+    font-size: 30px;
+    text-align: center;
 }
 #search-country {
+    border-color: hsl(200, 33%, 50%);
     border-radius: 50px;
+    width: 300px;
 }
 #country-data {
     border-radius: 10px;
@@ -48,10 +60,4 @@ border-radius: 800px;
     padding-left: 20px;
     padding-right: 20px;
 }
-.welcome {
-    font-size: 30px;
-    text-align: center;
-}
-
-
 /*# sourceMappingURL=search.835dbad9.css.map */

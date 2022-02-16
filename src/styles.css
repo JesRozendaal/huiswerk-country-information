@@ -4,9 +4,7 @@
 h1 {
     font-family: 'Gochi Hand', cursive;
     font-size: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin: 25px;
 }
 
@@ -21,12 +19,23 @@ p {
     font-family: 'Comic Neue', cursive;
     margin-top: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .to-search{
     font-size: 20px;
 }
 
 .world-map {
-    width: 100%;
+    max-width: 1600px;
     margin: 25px;
 }
 
@@ -42,7 +51,7 @@ p {
     background-color: hsl(210, 17%, 98%);
     border-radius: 10px;
     border: 2px solid lightgray;
-    max-width: 100%;
+    max-width: 1600px;
     padding: 50px;
     margin: 25px;
 }
